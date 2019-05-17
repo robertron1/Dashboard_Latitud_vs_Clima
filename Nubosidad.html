@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/Users/robertocampos/Desktop/Styles.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--left nav link-->
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html">LATITUD Y CLIMA
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <!--Right nav link-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gráficas
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="Temperatura.html">Max temperatura</a>
+                            </li>
+                            <li>
+                                <a href="Humedad.html">Humedad</a>
+                            </li>
+                            <li>
+                                <a href="Nubosidad.html">Nubosidad</a>
+                            </li>
+                            <li>
+                                <a href="Viento.html">Velocidad viento</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Comparación.html">Comparación</a>
+                    </li>
+                    <li>
+                        <a href="Datos.html">Datos</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!--Main Grid-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="main-box">
+                    <h1 class="main-pg-header">Nubosidad</h1>
+                    <hr>
+                    <div class="summary txt">
+                        <img id="result-img" src="/Users/robertocampos/Downloads/lat_nub.png", class = "img img-responsive", alt="Nubosidad vs Latitude">
+                        <p>
+                            No hay relación entre nubosidad y latitud. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="side-box">
+                    <h2 class="main-pg-subheader">Visualizaciones</h2>
+                    <hr>
+                    <div class="sidebar">
+                        <a href="Temperatura.html">
+                            <img id="side-img1" src="/Users/robertocampos/Downloads/lat_temp.png", class = "img img-responsive", alt="Temperatura vs. Latitud">
+                        </a>
+                        <a href="Humedad.html">
+                            <img id="side-img2" src="/Users/robertocampos/Downloads/lat_hum.png", class = "img img-responsive", alt="Humedad vs. Latitud">
+                        </a>
+                        <a href="Nubosidad.html">
+                            <img id="side-img3" src="/Users/robertocampos/Downloads/lat_nub.png", class = "img img-responsive", alt="Nubosidad vs. Latitud">
+                        </a>
+                        <a href="Viento.html">
+                            <img id="side-img4" src="/Users/robertocampos/Downloads/lat_viento.png", class = "img img-responsive", alt="Velocidad viento vs. Latitud">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
